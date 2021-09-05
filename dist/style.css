@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::first-letter {
+  text-transform: uppercase;
+}
+
+body {
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.wrapp {
+  overflow: hidden;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  inset: 0;
+}
+
+.slider-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slider-container img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0.5em;
+  line-height: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#next {
+  right: 0;
+}
+
+#prev {
+  left: 0;
+}
+
+.dots {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  list-style: none;
+}
+
+.dots .dot {
+  height: 17px;
+  width: 17px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  margin: 0.5em;
+  cursor: pointer;
+}
+
+.dots .dot.active {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
